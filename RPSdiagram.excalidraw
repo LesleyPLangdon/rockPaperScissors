@@ -1,0 +1,40 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://excalidraw.com",
+  "elements": [
+    {
+      "id": "9kv-4pDha5JgATsteojZb",
+      "type": "text",
+      "x": 694,
+      "y": 191.5,
+      "width": 1167,
+      "height": 342,
+      "angle": 0,
+      "strokeColor": "#000000",
+      "backgroundColor": "transparent",
+      "fillStyle": "hachure",
+      "strokeWidth": 1,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "strokeSharpness": "sharp",
+      "seed": 823753880,
+      "version": 305,
+      "versionNonce": 1400353944,
+      "isDeleted": false,
+      "boundElementIds": null,
+      "text": "Ask how many times player wants to play\nfor loop initialize to run however many times player wants to play\nask \"rock, paper, scissors\"\nuse random number to determine computers selection\ndetermine winner\noutput winner for round and total score",
+      "fontSize": 36,
+      "fontFamily": 1,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "baseline": 326
+    }
+  ],
+  "appState": {
+    "gridSize": null,
+    "viewBackgroundColor": "#ffffff"
+  }
+}
