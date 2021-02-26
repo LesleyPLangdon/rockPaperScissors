@@ -1,5 +1,6 @@
 /**
- *
+ *add enums and objects
+ * use map
  */
 var comPick;
 var numGames;
@@ -44,11 +45,9 @@ function playRound(numGames) {
   score();
 }
 function checkPlrPick(){
-  /*write function to validate player's choice using enums*/
-  //debugger
   while(plrPick !== "rock" && plrPick !== "paper" && plrPick !== "scissors") {
-    console.log(plrPick + " is an invalid entry, please try again");
-    plrPick = prompt("Please choose rock, paper or scissors").toLowerCase();
+    console.log();
+    plrPick = prompt(`${plrPick} is an invalid entry, please try again. \nPlease choose rock, paper or scissors`).toLowerCase();
   }
   return plrPick;
 }
@@ -122,12 +121,6 @@ function tie() {
 }
 function score() {
   console.log(
-    "score: " +
-      plrWins +
-      " player wins " +
-      comWins +
-      " computer wins " +
-      ties +
-      " ties"
+    `score: ${plrWins} player wins ${comWins} computer wins ${ties} ties`
   );
 }
