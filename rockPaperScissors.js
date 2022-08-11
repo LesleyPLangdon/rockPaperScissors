@@ -8,6 +8,11 @@ var plrWins = 0;
 var comWins = 0;
 var ties = 0;
 var plrPick;
+var roundNum;
+var picks;
+var winner;
+var showScore;
+
 function playGame() {
   userChoice();
   playRound(numGames);
@@ -19,15 +24,16 @@ function userChoice() {
 function playRound(numGames) {
   for (var i = 1; i <= numGames; i++) {
     alert("round " + i);
-    if (i>1){
-      score();
-    }
+    
+    // if (i>1){
+    //   score();
+    // }
     
     plrPick = prompt("Please choose rock, paper or scissors").toLowerCase();
     checkPlrPick();
     computerChoice();
 
-    alert(
+    picks=(
       "player selected " + plrPick + ", computer selected " + comPick
     );
     switch (plrPick) {
@@ -41,8 +47,9 @@ function playRound(numGames) {
         plrScissors(comPick);
         break;
       }
-  }
-  score();
+      score();
+    }
+  // score();
 }
 function checkPlrPick(){
   while(plrPick !== "rock" && plrPick !== "paper" && plrPick !== "scissors") {
@@ -106,21 +113,21 @@ function plrScissors(comPick) {
 }
 function pWins() {
   plrWins++;
-  alert("Result: Player wins");
+  winner = ("Result: Player wins");
   
 }
 function cWins() {
   comWins++;
-  alert("Result: Computer wins");
+  winner=("Result: Computer wins");
   
 }
 function tie() {
   ties++;
-  alert("Result: Tie");
+  winner=("Result: Tie");
   
 }
 function score() {
-  alert(
+  alert(picks + '\n' + winner + '\n' +
     `score: ${plrWins} player wins ${comWins} computer wins ${ties} ties`
   );
 }
