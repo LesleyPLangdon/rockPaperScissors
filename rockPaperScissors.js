@@ -18,7 +18,7 @@ function userChoice() {
 }
 function playRound(numGames) {
   for (var i = 1; i <= numGames; i++) {
-    console.log("round " + i);
+    alert("round " + i);
     if (i>1){
       score();
     }
@@ -27,7 +27,7 @@ function playRound(numGames) {
     checkPlrPick();
     computerChoice();
 
-    console.log(
+    alert(
       "player selected " + plrPick + ", computer selected " + comPick
     );
     switch (plrPick) {
@@ -106,21 +106,21 @@ function plrScissors(comPick) {
 }
 function pWins() {
   plrWins++;
-  console.log("Result: Player wins");
+  alert("Result: Player wins");
   
 }
 function cWins() {
   comWins++;
-  console.log("Result: Computer wins");
+  alert("Result: Computer wins");
   
 }
 function tie() {
   ties++;
-  console.log("Result: Tie");
+  alert("Result: Tie");
   
 }
 function score() {
-  console.log(
+  alert(
     `score: ${plrWins} player wins ${comWins} computer wins ${ties} ties`
   );
 }
